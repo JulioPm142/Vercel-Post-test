@@ -1,0 +1,346 @@
+.formatar{
+    gap: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-right: 5vw;
+    padding-left: 15vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+
+
+.textobackg{
+    text-align: left;
+    font-size: 30px;
+    color: azure;
+
+    background-color: rgba(184, 184, 184, 0.09);  
+    width: auto;
+    height: 17vh;
+    border-width: 1px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5%;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.textobackg2{
+    text-align: left;
+    font-size: 30px;
+    color: azure;
+
+    background-color: rgba(184, 184, 184, 0.09);  
+    width: 70vw;
+    border-width: 0.5px;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.4);
+
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: minhaFonte;
+}
+
+a:hover{
+    opacity: 0.7;
+    background-color: rgba(255, 2555, 255, 0.3);
+    border-radius: 15%;
+    color:#fff;
+    
+}
+
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system,Helvetica,Arial,sans-serif;  
+    background: #23232e;
+    height: 8vh;
+}
+
+main{
+    background: linear-gradient(rgba(69,69,69,1) 20%,rgba(30,30,30,1) 100% )
+    center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+body{
+    background: rgba(30,30,30,1) 100%;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.padding{
+    padding-top: 13vh;
+}
+
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.arteForm{
+    gap: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+    
+.arte img{
+    width: 27vw;
+    border-radius: 20%;
+}
+
+.arte img:hover{
+    opacity: 0.7;
+    background-color: rgba(255, 2555, 255, 0.5);
+    border-radius: 20%;
+    color:#fff;
+    
+}
+
+
+
+.icon img{
+    border-radius: 100% ;
+    border: solid;
+    border-color: #fff; 
+    border-width: 1px;
+    position: absolute; 
+    left:0.5%;
+    width:3vw;
+    top: 1%;
+}
+
+.BITform{
+    gap: 1vh;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.imgPrincipal img{
+    width:30vw; 
+    border-radius: 20%; 
+    border: solid;
+    border-color:rgba(0, 0, 0, 0.2); 
+}
+
+.imgImpulse img{
+    width:20vw; 
+    border-radius: 20%; 
+    border: solid;
+    border-color:rgba(0, 0, 0, 0.2);  
+}
+
+@font-face {
+    font-family: minhaFonte;
+    src: url(fontes/OriginTech.ttf);
+}
+
+
+
+
+@media (max-width:900px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        z-index: 1;
+        top: 8vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+
+    }
+
+    .nav-list li{
+        margin-left: 0;
+        opacity: 1;
+    }
+    .mobile-menu{
+        display: block;
+    }
+
+    .formatar{
+        flex-wrap: nowrap;
+        gap: 2%;
+        top: 1vh;
+        right: 0;
+        width: 100vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-left: 5vw;
+
+    }
+
+    .textobackg{
+        font-weight: bold;
+        font-size: 20px;
+        width: 90vw;
+        height: auto;
+
+    }
+    .textobackg2{    
+        font-weight: bold;
+        font-size: 20px;
+        width: 90vw;
+        height: auto;
+    }
+    .padding{
+        padding-top: 0%;
+    }
+
+    .arteForm{
+        gap: 4vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .arte img{
+        width: 40vw;
+        border-radius: 20%;
+    }
+
+    .icon img{
+        border-radius: 100% ; 
+        position: absolute; 
+        left:0.5%;
+        width:10vw;
+        top: 1%;
+    }
+
+    .imgPrincipal img{
+        width:60vw;
+    }
+
+    .imgImpulse img{
+        width:50vw; 
+        border-radius: 20%; 
+        border: solid;
+        border-color:rgba(0, 0, 0, 0.2);  
+    }
+
+    .logo{
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.nav-list.active{
+    transform:translateX(0);
+}
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: none;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 0;
+    font-family: system-ui, -apple-system,Helvetica,Arial,sans-serif; 
+    background-color: #23232e; 
+  }
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    background-color: black;
+    background-size: cover;
+    border-radius: 0%;
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    background-color: #23232e;
+    border-radius: 0%;
+  }
+  .dropdown-item.disabled, .dropdown-item:disabled {
+    color: black;
+    pointer-events: none;
+    background-color: #23232e;
+    border-radius: 0%;
+  }
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../static/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/Estilo.css">
+
+    <title></title> 
+</head>
+<body>
+  <header>
+    <!-- icone de menu -->
+    <nav><p class="icon">
+      <img src="../static/img/logo.png" alt="logo" >
+      <a class="logo">Galeria</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div> 
+
+    <!-- lista de hrefs-->
+    <ul class="nav-list">
+        <li><a href="/">Home </a></li>
+        <li><a>
+
+          <div class="dropdown show">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projetos
+            </a>         
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="{{ url_for('API') }}">Projeto Integrador </a>
+              <a class="dropdown-item" href="{{ url_for('BIT') }}" >Break In Time</a>
+            </div>
+          </div>
+
+        </a></li>
+        <li><a href="{{ url_for('artes') }}">Galeria </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+      <div class="arte">
+          <div class="arteForm"> 
+            <img srcset="../static/img/artes/Bmoon250.png 250w, ../static/img/artes/Bmoon.png 700w" sizes="(max-width:1000px) 150px,700px" alt="Bmoon"                tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Sob o luar" data-bs-placement="Right" data-bs-content="Um dos primeiros desenhos que fiz, em comemoração a uma blood moon parcial que ocorreu na época">
+              <img srcset="../static/img/artes/halloween250.png 250w, ../static/img/artes/halloween.png 700w" sizes="(max-width:1000px) 150px,700px" alt="halloween"        tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Nyo no halloween" data-bs-placement="Left" data-bs-content="Feito próximo ao halloween, decidi misturar elementos de vários personagens que já tinha criado em um só">
+              <img srcset="../static/img/artes/natal250.png 250w, ../static/img/artes/natal.png 700w" sizes="(max-width:1000px) 150px,700px" alt="natal" alt="Bmoon"    tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Perfil Natalino" data-bs-placement="Right" data-bs-content="A partir do desenho do halloween, continuei a usar a Nyo desta vez como uma foto de perfil para o Natal de 2021">
+              <img srcset="../static/img/artes/miko250.png 250w, ../static/img/artes/miko.png 700w" sizes="(max-width:1000px) 150px,700px" alt="miko" alt="halloween"  tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Raposa Miko" data-bs-placement="Left" data-bs-content="Miko foi criada a partir de meu personagem favorito em um jogo">
+          </div>    
+      </div>
+  </main>
+
+
+</body>
+
+    <script src="../static/js/mobile-navbar.js"> </script>
+    <script src="../static/js/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {trigger: 'focus'})
+})
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</html>
